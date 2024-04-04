@@ -1,4 +1,4 @@
-package com.softulp.listareciclable;
+package com.ezediaz.peliculas;
 
 import org.junit.Test;
 

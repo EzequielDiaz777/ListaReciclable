@@ -1,4 +1,4 @@
-package com.softulp.listareciclable;
+package com.ezediaz.peliculas;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.softulp.listareciclable", appContext.getPackageName());
+        assertEquals("com.ezediaz.peliculas", appContext.getPackageName());
     }
 }
