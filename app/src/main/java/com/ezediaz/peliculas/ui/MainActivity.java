@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<Pelicula> peliculas) {
                 PeliculaAdapter pa = new PeliculaAdapter(peliculas,MainActivity.this, getLayoutInflater());
-                GridLayoutManager glm = new GridLayoutManager(MainActivity.this, 2, GridLayoutManager.VERTICAL, false);
+                GridLayoutManager glm = new GridLayoutManager(MainActivity.this, 1, GridLayoutManager.VERTICAL, false);
                 RecyclerView rc = binding.listaDePeliculas;
                 rc.setLayoutManager(glm);
                 rc.setAdapter(pa);

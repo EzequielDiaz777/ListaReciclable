@@ -9,9 +9,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cvItem"
-        android:layout_width="416dp"
-        android:layout_height="734dp"
-        android:background="@drawable/fondo">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvTitulo"
