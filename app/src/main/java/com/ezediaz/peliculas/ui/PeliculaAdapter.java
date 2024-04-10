@@ -44,11 +44,8 @@ public class PeliculaAdapter extends RecyclerView.Adapter<PeliculaAdapter.ViewHo
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, PeliculaActivity.class);
-                intent.putExtra("titulo", pelicula.getTitulo());
-                intent.putExtra("foto", pelicula.getFoto());
-                intent.putExtra("descripcion", pelicula.getDescripcion());
-                intent.putExtra("director", pelicula.getDirector());
-                intent.putExtra("actores", pelicula.getActores());
+                intent.putExtra("pelicula", pelicula);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });

@@ -1,11 +1,13 @@
 package com.ezediaz.peliculas.modelo;
 
-public class Pelicula {
+import java.io.Serializable;
+
+public class Pelicula implements Serializable {
     private String titulo;
     private String descripcion;
     private int foto;
     private String director;
-    private String[] actores;
+    private String actores;
 
     public Pelicula(String titulo, String descripcion, int foto){
         this.titulo = titulo;
@@ -13,7 +15,7 @@ public class Pelicula {
         this.foto = foto;
     }
 
-    public Pelicula(String titulo, String descripcion, int foto, String director, String[] actores) {
+    public Pelicula(String titulo, String descripcion, int foto, String director, String actores) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.foto = foto;
@@ -29,11 +31,11 @@ public class Pelicula {
         this.director = director;
     }
 
-    public String[] getActores() {
+    public String getActores() {
         return actores;
     }
 
-    public void setActores(String[] actores) {
+    public void setActores(String actores) {
         this.actores = actores;
     }
 
